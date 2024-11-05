@@ -1,7 +1,9 @@
+
 package util;
 
-import modelo.Usuario;
+import java.util.List;
 import modelo.Vaca;
+import org.junit.jupiter.api.Test;
 
 /**
  *
@@ -11,57 +13,34 @@ public class DaoTest {
     
     public DaoTest() {
     }
-    
-    
-//    @org.junit.jupiter.api.Test
-//    public void testBuscar(){
-//        Dao<Vaca> dao = new Dao(Vaca.class, "vaca");
-//        Vaca v = dao.buscarPorChave("brinco", "A4");
-//        System.out.println(v.getNome() + " " + v.getRaca());
-//        System.out.println("\n");
-//    }
-    
-    @org.junit.jupiter.api.Test
-    public void testBuscar(){
-        Dao<Usuario> dao = new Dao(Usuario.class);
-        Usuario u = dao.buscarPorChave("login", "ZE");
-        System.out.println(u.getNome());
-        System.out.println("\n");
-    }
-    
-//    @org.junit.jupiter.api.Test
-//    public void testInserirUsuario() {
-//        Dao<Usuario> dao = new Dao(Usuario.class);
-//        Usuario u = new Usuario("ZE", "José", "123");
-//        dao.inserir(u);
-//    }
 
-//    @org.junit.jupiter.api.Test
+//    @Test
 //    public void testInserirVaca() {
+//        Vaca v = new Vaca("B1", "Vaquinha", "Holandesa");
 //        Dao<Vaca> dao = new Dao(Vaca.class);
-//        Vaca vaca = new Vaca("A1", "Genoveva", "Holandesa");
-//        dao.inserir(vaca);
+//        dao.inserir(v);    
 //    }
     
-//    @org.junit.jupiter.api.Test
-//    public void testListarVacas(){
+//    @Test
+//    public void testListar(){
 //        Dao<Vaca> dao = new Dao(Vaca.class);
-//        List<Vaca> lista = dao.listarTodos();
+//        List<Vaca> lista = dao.listarTodos(); 
 //        for (Vaca v : lista){
-//            System.out.println(v.getNome());            
+//            System.out.println(v.getBrinco() + " " + v.getNome());
 //        }
-//        System.out.println("\n");
 //    }
     
-//    @org.junit.jupiter.api.Test
-//    public void testBuscarAlterar() {
+    
+//    @Test
+//    public void testExcluir(){
 //        Dao<Vaca> dao = new Dao(Vaca.class);
-//        Vaca v = dao.buscarPorChave("brinco", "A6");
-//        System.out.println(v.getNome());
-//        System.out.println(v.getRaca());
-//        v.setRaca("Gir"); 
-//        dao.alterar("brinco", "A6", v);
+//        // boolean result = dao.excluir("brinco", "15"); / para dar errado 
+//        boolean result = dao.excluir("brinco", "A1");  // para dar certo
+//        System.out.println(result);
 //    }
+    
+    
+    
     
     
 }
