@@ -18,8 +18,7 @@ import org.bson.codecs.pojo.PojoCodecProvider;
  * @author José
  */
 public class Dao <T> {
-    
-//    private final Class<T> classe; 
+
     private final String URI = "mongodb://localhost:27017";
     private final String DATABASE = "fazenda"; 
     private final MongoClient mongoClient;
@@ -28,7 +27,6 @@ public class Dao <T> {
     private final MongoCollection<T> collection; 
     
     public Dao(Class<T> classe){
-//        this.classe = classe; 
         this.colecao = classe.getName(); 
         mongoClient = MongoClients.create(URI);
         CodecRegistry pojoCodecRegistry = org.bson.codecs.configuration.
