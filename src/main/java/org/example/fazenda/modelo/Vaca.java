@@ -1,4 +1,4 @@
-package modelo;
+package org.example.fazenda.modelo;
 
 import org.bson.codecs.pojo.annotations.BsonProperty;
 

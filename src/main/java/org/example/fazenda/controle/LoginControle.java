@@ -1,4 +1,4 @@
-package controle;
+package org.example.fazenda.controle;
 
 /**
  *

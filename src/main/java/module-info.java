@@ -1,14 +1,13 @@
-module org.example.fazendateste {
+module org.example.fazenda {
     requires javafx.controls;
     requires javafx.fxml;
     requires org.mongodb.bson;
     requires org.mongodb.driver.core;
     requires org.mongodb.driver.sync.client;
-    requires junit;
 
 
-    opens org.example.fazendateste to javafx.fxml;
-    exports org.example.fazendateste;
-    exports org.example.fazendateste.controle;
-    opens org.example.fazendateste.controle to javafx.fxml;
+    opens org.example.fazenda to javafx.fxml;
+    exports org.example.fazenda;
+    exports org.example.fazenda.controle;
+    opens org.example.fazenda.controle to javafx.fxml;
 }

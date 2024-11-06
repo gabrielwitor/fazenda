@@ -1,4 +1,4 @@
-package util;
+package org.example.fazenda.util;
 
 import com.mongodb.MongoClientSettings;
 import com.mongodb.client.MongoClient;
